@@ -10,7 +10,7 @@ export function setupAPIClient(ctx = undefined) {
   let cookies = parseCookies(ctx);
 
   const api = axios.create({
-    baseURL: process.env.REACT_APP_API_URL,
+    baseURL: "http://52.249.193.55/Api.PadelSul/",
     headers: {
       Authorizations: `Bearer ${cookies["padel.token"]}`,
     },
